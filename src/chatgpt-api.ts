@@ -6,7 +6,6 @@ import * as types from './types'
 import { ChatGPTConversation } from './chatgpt-conversation'
 import { fetch } from './fetch'
 import { fetchSSE } from './fetch-sse'
-import { markdownToText } from './utils'
 
 const KEY_ACCESS_TOKEN = 'accessToken'
 const USER_AGENT =
@@ -164,10 +163,6 @@ export class ChatGPTAPI {
               let text = message?.content?.parts?.[0]
 
               if (text) {
-                if (!this._markdown) {
-                  text = markdownToText(text)
-                }
-
                 response = text
 
                 if (onProgress) {

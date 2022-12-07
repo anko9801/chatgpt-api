@@ -34,10 +34,6 @@
 - [SessionResult](modules.md#sessionresult)
 - [User](modules.md#user)
 
-### Functions
-
-- [markdownToText](modules.md#markdowntotext)
-
 ## Type Aliases
 
 ### AvailableModerationModels
@@ -405,23 +401,3 @@ ___
 #### Defined in
 
 [types.ts:30](https://github.com/transitive-bullshit/chatgpt-api/blob/20c376e/src/types.ts#L30)
-
-## Functions
-
-### markdownToText
-
-▸ **markdownToText**(`markdown?`): `string`
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `markdown?` | `string` |
-
-#### Returns
-
-`string`
-
-#### Defined in
-
-[utils.ts:4](https://github.com/transitive-bullshit/chatgpt-api/blob/20c376e/src/utils.ts#L4)
